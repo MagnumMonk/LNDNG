@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<head>
+  <title>Landing Page</title>
+  <link rel="shortcut icon" href="./IMG/Flat Vector Icons (220).png" />
+  <link rel="stylesheet" type="text/css" href="./CSS/style.css" >
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.6/angular.min.js"></script>
+</head>
+<body>
+  <div id="navigation">
+    <div id="logo">
+      <span class="logo1">company name</span>
+      <span class="logo2">Logo</span>
+    </div>
+    <ul class="nvg-list">
+      <li><a href="">textn</a></li>
+      <li><a href="">textn</a></li>
+      <li><a href="">textn</a></li>
+      <li><a href="">textn</a></li>
+      <li><a href="">textn</a></li>
+      <li><a href="">textz</a></li>
+    </ul>
+  </div>
+  <div class="content-block">
+    <div class="big-slogan">
+      <h1>SUCH BIG MUCH SLOGAN</h1>
+      <p>so lorem ipsum inspirational wow</p>
+    </div>
+  </div>
+  <div class="content-block2" ng-app='prodApp'>
+    <div class="test1" ng-controller='prodAppCtrl'>
+      <ul ng-repeat="friend in friendslist">
+        <li>{{ friend.name }}</li>
+        <li>{{ friend.age }}</li>
+      </ul>
+    </div>
+  </div>
+</body>
+<script src='js/prodApp.js'></script>
+<script src='https://code.jquery.com/jquery-3.1.0.min.js'></script>
+</html>

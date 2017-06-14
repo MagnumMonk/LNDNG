@@ -1,25 +1,34 @@
+// less-watch-compiler less css
 
 @lime: #CDDC39;
 @dgray: #212121;
 @ltxt: #fff;
 @dtxt: #000;
+@price: 60px;
+@limetr: rgba(205, 220, 57, 0.5);
+@fmain: 'Patua One';
+
 
 
 *{
   box-sizing: border-box;
-  border: 1px solid;
+  border: 0px solid;
   margin: 0px;
   padding: 0;
+  font-family: 'Ubuntu', sans-serif;
 }
+
 #navigation {
 
   height: 70px;
   width: 100%;
-  background-color: @lime;
+  background-color: #CDDC39;
   margin: auto;
 }
+
+
 #logo {
-  background-color: @dgray;
+  background-color: #212121;
   display: flex;
   height: 100%;
   float: left;
@@ -27,14 +36,30 @@
   margin: auto;
 }
 
-#logo span {
+h1 {
+  font-size: 3em;
+  font-family: 'Patua One';
+}
+.big-slogan p {
+  color: #CDDC39;
+}
 
-  color: @ltxt;
+#logo span {
   font-size: 1.2em;
   resize: vertical;
   margin: auto;
   margin-left: 10px;
   margin-right: 10px;
+}
+
+#logo1 {
+  font-family: 'Patua One';
+  color: #CDDC39;
+}
+
+#logo2 {
+  font-family: 'Patua One';
+  color: #fff;
 }
 
 .nvg-list {
@@ -45,18 +70,27 @@
   height: 100%;
 }
 .nvg-list li {
+
   display: flex;
   height: 100%;
   list-style-type: none;
   margin: auto;
+  transition: 0.2s;
+
 }
 .nvg-list a {
-  font-size: 1.2em;
-  color: @dtxt;
+  font-size: 1em;
+  color: #fff;
   text-decoration: none;
   margin: auto;
-  padding: 0px 10px;
+  padding: 0px 12px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
 }
+
+.nvgh {
+  background-color: #AFB42B;
+}
+
 .content-block{
   position: relative;
   background: url("../IMG/road.jpg") center no-repeat;
@@ -68,14 +102,78 @@
   padding: 70px;
 }
 
-.big-slogan {
-  color: @ltxt;
-}
 
+
+.big-slogan {
+  color: #fff;
+}
+.big-slogan p {
+  width: 70%
+}
 .content-block2 {
-  background-color: @dgray;
+  background-color: #212121;
   display: flex;
   position: relative;
   height: 500px;
+}
+
+.card {
+  background-size: cover;
+  background-position: center;
+  width: 20%;
+  height: 100%;
+  display: flex;
+  text-align: center;
+  transition: 0.2s;
+}
+.cardh {
+  width: 30%;
+  transition: 0.2s;
+}
+.card img {
+  height: 100%;
+}
+.card h2 {
   color: #fff;
+  width: 100%;
+  position: relative;
+  margin: 20px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+}
+
+.cover {
+  background-color: rgba(65, 60, 60, 0.5);
+  width: 100%;
+  display: flex;
+  text-align: center;
+  padding: 10px;
+  transition: 0.2s;
+}
+
+.price {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background-color: #CDDC39;
+  line-height: 60px;
+  border-radius: 30px;
+  box-shadow: 2px 2px 20px #000;
+  bottom: -10px;
+  margin-left: 80px;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.priceh {
+  width: 100px;
+  transition: 0.2s;
+  color: #fff;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+
+}
+
+.hover {
+  background-color: rgba(205, 220, 57, 0);
+  color: #000;
+  transition: background-color 0.5s ease;
 }

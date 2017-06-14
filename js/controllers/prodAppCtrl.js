@@ -1,29 +1,25 @@
-prodApp.controller('prodAppCtrl',
-['$scope', function($scope) {
-  $scope.friendslist = ['loser','junkie','snitch'];
-];
-});
- /*
- var myApp = angular.module('myApp',[]);
-
-myApp.controller('MainController',['$scope',function($scope){
-  $scope.friendslist = ["friend1","friend2","friend3","friend4"];
-  $scope.emails = [
+app.controller('prodAppCtrl',
+function prodAppCtrl($scope) {
+  $scope.products = [
     {
-      "name":"friend1",
-      "email":"email1@gmail.com"
+      name: 'some product',
+      price: 4.99
     },
     {
-      "name":"friend2",
-      "email":"email2@gmail.com"
+      name: 'another product',
+      price: 2.99
     },
     {
-      "name":"friend3",
-      "email":"email4@gmail.com"
+      name: 'top product',
+      price: 9.99
     },
     {
-      "name":"friend4",
-      "email":"email4@gmail.com"
+      name: 'deluxe product',
+      price: 19.99
+    },
+    {
+      name: 'some other product',
+      price: 7.99
     }
   ];
-}]);
+});

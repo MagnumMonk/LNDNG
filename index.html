@@ -3,11 +3,15 @@
 <meta charset="utf-8">
 <head>
   <title>Landing Page</title>
-  <link rel="shortcut icon" href="./IMG/Flat Vector Icons (220).png" />
-  <link rel="stylesheet" type="text/css" href="./CSS/style.css" >
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.6/angular.min.js"></script>
+  <link rel="shortcut icon" href="IMG/Flat Vector Icons (220).png" />
+  <link rel="stylesheet" type="text/css" href="CSS/style.css" />
+  <link rel="stylesheet/less" type="text/css" href="CSS/style.less" />
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+  <script src="js/app.js" type="text/javascript"></script>
+  <script src="js/controllers/prodAppCtrl.js" type="text/javascript"></script>
+  <script src="components/less.js" type="text/javascript"></script>
 </head>
-<body>
+<body ng-app='prodApp'>
   <div id="navigation">
     <div id="logo">
       <span class="logo1">company name</span>
@@ -28,15 +32,14 @@
       <p>so lorem ipsum inspirational wow</p>
     </div>
   </div>
-  <div class="content-block2" ng-app='prodApp'>
-    <div class="test1" ng-controller='prodAppCtrl'>
-      <ul ng-repeat="friend in friendslist">
-        <li>{{ friend.name }}</li>
-        <li>{{ friend.age }}</li>
-      </ul>
-    </div>
+  <div class="content-block2" ng-controller='prodAppCtrl'>
+
+        <span class="card" ng-repeat="product in products">
+          <p>{{product.name}}</p>
+          <p>{{product.price}}</p>
+        </span>
+
   </div>
 </body>
-<script src='js/prodApp.js'></script>
-<script src='https://code.jquery.com/jquery-3.1.0.min.js'></script>
+
 </html>

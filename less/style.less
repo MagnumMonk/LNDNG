@@ -1,0 +1,81 @@
+
+@lime: #CDDC39;
+@dgray: #212121;
+@ltxt: #fff;
+@dtxt: #000;
+
+
+*{
+  box-sizing: border-box;
+  border: 1px solid;
+  margin: 0px;
+  padding: 0;
+}
+#navigation {
+
+  height: 70px;
+  width: 100%;
+  background-color: @lime;
+  margin: auto;
+}
+#logo {
+  background-color: @dgray;
+  display: flex;
+  height: 100%;
+  float: left;
+  padding: 0 50px;
+  margin: auto;
+}
+
+#logo span {
+
+  color: @ltxt;
+  font-size: 1.2em;
+  resize: vertical;
+  margin: auto;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.nvg-list {
+  display: flex;
+  float: right;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.nvg-list li {
+  display: flex;
+  height: 100%;
+  list-style-type: none;
+  margin: auto;
+}
+.nvg-list a {
+  font-size: 1.2em;
+  color: @dtxt;
+  text-decoration: none;
+  margin: auto;
+  padding: 0px 10px;
+}
+.content-block{
+  position: relative;
+  background: url("../IMG/road.jpg") center no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 500px;
+  padding: 70px;
+}
+
+.big-slogan {
+  color: @ltxt;
+}
+
+.content-block2 {
+  background-color: @dgray;
+  display: flex;
+  position: relative;
+  height: 500px;
+  color: #fff;
+}

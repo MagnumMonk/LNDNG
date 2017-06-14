@@ -113,7 +113,6 @@ h1 {
 .content-block2 {
   background-color: #212121;
   display: flex;
-  position: relative;
   height: 500px;
 }
 
@@ -122,29 +121,28 @@ h1 {
   background-position: center;
   width: 20%;
   height: 100%;
-  display: flex;
-  text-align: center;
   transition: 0.2s;
 }
 .cardh {
   width: 30%;
   transition: 0.2s;
 }
-.card img {
-  height: 100%;
-}
+
 .card h2 {
+  top: 10px;
   color: #fff;
-  width: 100%;
-  position: relative;
+  max-width: 50%;
   margin: 20px;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
 }
 
 .cover {
   background-color: rgba(65, 60, 60, 0.5);
-  width: 100%;
+  width: auto;
+  height: 100%;
   display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
   padding: 10px;
   transition: 0.2s;
@@ -152,14 +150,13 @@ h1 {
 
 .price {
   position: absolute;
+  margin-top: 440px;
   width: 60px;
   height: 60px;
   background-color: #CDDC39;
   line-height: 60px;
   border-radius: 30px;
   box-shadow: 2px 2px 20px #000;
-  bottom: -10px;
-  margin-left: 80px;
   text-decoration: none;
   transition: 0.2s;
 }

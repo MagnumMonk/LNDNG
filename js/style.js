@@ -25,7 +25,7 @@ $(document).ready(function(){
 
   });
 
-  var slideIndex = 0;
+  var slideIndex = 1;
   showSlides(slideIndex);
 
   function plusSlides(n) {
@@ -57,15 +57,11 @@ $(document).ready(function(){
     dots[slideIndex-1].className += " active";
   };
 
-
-    var timeOut = null;
-
-    (function autoSlide(){
-      $('.next').trigger('click');
-      timeOut = setInterval(autoSlide, 2000);
-    }());
-
-    $('.next, .prev, .dot').click(function (){
-      clearInterval(timeOut);
-
-    });
+  var slider = function() {
+    $('.next').trigger('click');
+  };
+  var timer = window.setInterval(slider, 5000);
+   $('.next, .prev, .dot').click(function(){
+     window.clearInterval(timer);
+     timer = window.setInterval(slider, 5000);
+   });

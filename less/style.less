@@ -28,7 +28,7 @@
 
 
 #logo {
-  background-color: #212121;
+  background-color: #607D8B;
   display: flex;
   height: 100%;
   float: left;
@@ -87,29 +87,114 @@ h1 {
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
 }
 
+.list {
+  cursor: pointer;
+}
+
 .nvgh {
-  background-color: #AFB42B;
+  background-color: #607D8B;
+}
+
+.slide-container {
+  width: 100%;
+  height: 500px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  background-color: #fff;
 }
 
 .content-block{
-  position: relative;
-  background: url("../IMG/road.jpg") center no-repeat;
-  background-size: cover;
-  display: flex;
-  align-items: center;
+  position: absolute;
   width: 100%;
   height: 500px;
   padding: 70px;
 }
 
+.big-slogan h1 {
+  color: @ltxt;
+}
+
+.blockone {
+ opacity: 0;
+ background: url("../img/road.jpg") center no-repeat;
+ background-size: cover;
+ z-index: 15;
+
+}
+
+.blocktwo {
+ opacity: 0;
+ background: url("../img/pwrln.jpg") center no-repeat;
+ background-size: cover;
+ z-index: 10;
+
+}
+
+.blockthree {
+ opacity: 0;
+ background: url("../img/wndml.jpg") bottom no-repeat;
+ background-size: cover;
+ z-index: 5;
+
+}
 
 
-.big-slogan {
-  color: #fff;
+.dothold {
+  position: absolute;
+  top: 450px;
+  z-index: 20;
 }
-.big-slogan p {
-  width: 70%
+
+.dot {
+  cursor: pointer;
+  height: 13px;
+  width: 13px;
+  border-radius: 50%;
+  border: 1px solid;
+  border-color: @lime;
+  display: inline-block;
+  margin: 0 3px;
 }
+
+.active, .dot:hover {
+  background-color: @lime;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+
+  color: @lime;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  z-index: 30;
+}
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+.fade {
+  transition: 0.4s;
+
+}
+
+
+@keyframes fadein {
+    from { opacity: 0.5; }
+    to   { opacity: 1; }
+}
+
 .content-block2 {
   background-color: #212121;
   display: flex;

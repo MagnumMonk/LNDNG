@@ -42,7 +42,7 @@
 
     // default configuration values
     var _cfg = {
-        interval: 50,
+        interval: 100,
         sensitivity: 6,
         timeout: 0
     };

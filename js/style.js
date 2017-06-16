@@ -1,18 +1,22 @@
     $('.hid').hide();
 
-// major animations
+  // major animations
 
-function makeThicc(){$(this).addClass("cardh");};
-function makeThin(){$(this).removeClass("cardh");};
+function makeThicc(){
+  $(this).addClass("cardh");
+  $(".p-name", this).addClass("p-nameh");
+  $('.price', this).addClass("priceshow");
+};
+function makeThin(){
+  $(this).removeClass("cardh");
+  $(".p-name", this).removeClass("p-nameh");
+  $('.price', this).removeClass("priceshow");
+};
 
 $(document).ready(function(){
 
     $(".cover").hover(function(){
       $(this).toggleClass("hover");
-    });
-
-    $(".card").hover(function(){
-      $(".p-name", this).toggleClass("p-nameh");
     });
 
     $('.card').hoverIntent(makeThicc, makeThin);

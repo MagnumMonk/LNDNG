@@ -11,22 +11,24 @@
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
   <script src="js/app.js" type="text/javascript"></script>
   <script src="js/controllers/prodAppCtrl.js" type="text/javascript"></script>
-  <script src="components/less.js" type="text/javascript"></script>
+  <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+  <script type="text/javascript" src="components/jquery.hoverIntent.js"></script>
 </head>
 <body>
-  <div id="navigation">
-    <div id="logo">
-      <span id="logo1">company name</span>
-      <span id="logo2">Loggo</span>
+  <div class="navigation fade">
+    <div class="logo">
+      <span class="logo1">company name</span>
+      <span class="logo2">Loggo</span>
     </div>
     <ul class="nvg-list">
-      <li class ="list"><a href="">Home</a></li>
-      <li class ="list"><a href="">Products</a></li>
-      <li class ="list"><a href="">Team</a></li>
-      <li class ="list"><a href="">Feedback</a></li>
-      <li class ="list"><a href="">textn</a></li>
-      <li class ="list"><a href="">Contacts</a></li>
+      <li class ="list"><a class='navtxt' href="">Home</a></li>
+      <li class ="list"><a class='navtxt' href="">Products</a></li>
+      <li class ="list"><a class='navtxt' href="">Service</a></li>
+      <li class ="list"><a class='navtxt' href="">Feedback</a></li>
+      <li class ="list"><a class='navtxt' href="">textn</a></li>
+      <li class ="list"><a class='navtxt' href="">Contacts</a></li>
     </ul>
+    <span class="navicon"><a href="javascript:void(0);" style="font-size:15px;"  onclick="myFunction()">&#9776;</a></span>
   </div>
   <div class="slide-container">
 
@@ -65,7 +67,7 @@
   <div class="content-block2" ng-app='prodApp' ng-controller='prodAppCtrl'>
       <span class="card" ng-repeat="product in products" ng-style="{'background-image':'url({{product.icon}})'}">
           <div class="cover">
-              <h2>{{product.name}}</h2>
+              <h2 class="p-name">{{product.name}}</h2>
               <a class="price" href="">
                 <p>{{product.price | currency}}</p>
                 <p class='hid'>BUY</p>
@@ -73,9 +75,11 @@
           </div>
         </span>
   </div>
+  <div class="content-block3">
+  </div>
 </body>
 
-<script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+
 <script src="js/style.js" type="text/javascript"></script>
 
 </html>

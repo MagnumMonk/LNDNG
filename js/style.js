@@ -1,19 +1,21 @@
     $('.hid').hide();
 
+// major animations
+
+function makeThicc(){$(this).addClass("cardh");};
+function makeThin(){$(this).removeClass("cardh");};
+
 $(document).ready(function(){
 
     $(".cover").hover(function(){
       $(this).toggleClass("hover");
     });
 
-    $(".card").hover(
-      function(){
-        $(this).addClass("cardh");
-      },
-      function(){
-        $(this).removeClass("cardh");
-      }
-    );
+    $(".card").hover(function(){
+      $(".p-name", this).toggleClass("p-nameh");
+    });
+
+    $('.card').hoverIntent(makeThicc, makeThin);
 
     $(".price").hover(function(){
       $(this).toggleClass("priceh");
@@ -24,6 +26,8 @@ $(document).ready(function(){
     });
 
   });
+
+// auto-slideshow (avoiding show/hide because no transition time supported)
 
   var slideIndex = 1;
   showSlides(slideIndex);
@@ -57,6 +61,8 @@ $(document).ready(function(){
     dots[slideIndex-1].className += " active";
   };
 
+// slideshow reset on click
+
   var slider = function() {
     $('.next').trigger('click');
   };
@@ -65,3 +71,15 @@ $(document).ready(function(){
      window.clearInterval(timer);
      timer = window.setInterval(slider, 5000);
    });
+
+   // navbar shrink
+
+   $(window).scroll(function() {
+      if ($(document).scrollTop() > 150) {
+        $('.navigation').addClass('shrunk');
+        $('.navtxt').addClass('navtxth');
+      } else {
+        $('.navigation').removeClass('shrunk');
+        $('.navtxt').removeClass('navtxth');
+      }
+    });

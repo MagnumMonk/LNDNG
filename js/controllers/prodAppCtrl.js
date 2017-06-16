@@ -3,13 +3,23 @@ function prodAppCtrl($scope) {
   $scope.products = [
     {
       name: 'Some Product',
-      price: 2.99,
+      price: 1.99,
       icon: 'img/prod1.jpg'
     },
     {
-      name: 'Another Product',
-      price: 4.99,
+      name: 'Low Product',
+      price: 2.99,
       icon: 'img/prod2.jpg'
+    },
+    {
+      name: 'Mid Product',
+      price: 4.99,
+      icon: 'img/prod6.jpg'
+    },
+    {
+      name: 'Another Product',
+      price: 7.99,
+      icon: 'img/prod7.jpg'
     },
     {
       name: 'Top Product',

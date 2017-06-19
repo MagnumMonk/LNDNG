@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
-<meta charset="utf-8">
+<meta charset="utf-8"/>
 <head>
   <title>Landing Page</title>
-  <link rel="shortcut icon" href="img/Flat Vector Icons (220).png" />
+  <link rel="shortcut icon" href="img/FlatVectorIcons220.png" />
   <link rel="stylesheet" type="text/css" href="css/style.css" />
   <link href="https://fonts.googleapis.com/css?family=Patua+One" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
@@ -74,7 +74,7 @@
 <!-- content-block2 -->
 
   <div class="content-block2" ng-controller='prodAppCtrl'>
-      <span class="card" ng-repeat="product in products" ng-style="{'background-image':'url({{product.icon}})'}">
+      <div class="card" ng-repeat="product in products" ng-style="{'background-image':'url({{product.icon}})'}">
           <div class="cover">
               <h2 class="p-name">{{product.name}}</h2>
               <a class="price" href="">
@@ -82,7 +82,7 @@
                 <p class='hid'>BUY</p>
               </a>
           </div>
-        </span>
+        </div>
   </div>
 
 
@@ -93,13 +93,13 @@
   <p>Sonet sententiae efficiendi ex sea, prompta partiendo sea id, sea cu volutpat postulant. Nam electram vituperata eu. Tale temporibus cu duo, qui facilisi cotidieque id, eu amet wisi eum. Ius virtute electram disputationi ad, simul iriure omnesque no has.</p>
   <div class="srvc-container">
     <div class='aligner' ng-repeat="service in services">
-    <span class="srvc">
+    <div class="srvc">
       <div id='bgicon'>
-        <img src="{{service.icon}}" class="s-icon"/>
+        <img src="{{service.icon}}" class="s-icon" alt="service icon"/>
       </div>
       <h2>{{service.name}}</h2>
       <p>{{service.descr}}</p>
-    </span>
+    </div>
   </div>
   </div>
 </div>

@@ -1,13 +1,14 @@
 //  cd /d d:\web\lndng less-watch-compiler less css
 
-@lgray: #607D8B;
+@lgrey: #607D8B;
 @lime: #CDDC39;
-@dgray: #212121;
+@dgrey: #212121;
 @ltxt: #fff;
 @dtxt: #000;
 @price: 60px;
 @limetr: rgba(205, 220, 57, 0.5);
 @fmain: 'Patua One';
+@tgrey: rgba(0, 0, 0, 0.3);
 
 
 html::-webkit-scrollbar { width: 0 }
@@ -32,14 +33,14 @@ body {
   width: 100%;
   background-color: #CDDC39;
   margin: auto;
-  z-index: 100;
+  z-index: 400;
 }
 
 
 
 .shrunk {
   height: 35px;
-  background-color: @lgray;
+  background-color: @lgrey;
   transition: 0.2s;
 }
 
@@ -134,7 +135,7 @@ h1 {
 }
 
 .navicon:hover {
-  background-color: @lgray;
+  background-color: @lgrey;
 }
 .navicon:hover a {
   color: @lime;
@@ -144,6 +145,8 @@ h1 {
   font-size: 0.85em;
   transition: 0.2s;
 }
+
+
 
 @media only screen and (max-width: 850px){
 
@@ -404,7 +407,7 @@ h1 {
   width: 100%;
   height: auto;
   text-align: center;
-  background-color: @lgray;
+  background-color: @lgrey;
   background: url('../img/shards.jpg');
   background-size: 80%;
 
@@ -425,6 +428,7 @@ h1 {
   text-align: center;
   display: inline-block;
   width: 100%;
+  max-width: 1000px;
 
 }
 .aligner {
@@ -457,8 +461,6 @@ h1 {
   }
 }
 
-
-
 .s-icon {
   display: inline-block;
   margin: 15px;
@@ -475,4 +477,102 @@ h1 {
   background-color: @lime;
 }
 
+@media only screen and (max-width: 650px){
+  .aligner {
+    width: 150px;
+  }
+}
+
 //---------------------------------- content-block4 ---------------------------------------------
+.content-block4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(to bottom right, @lgrey, @lime);
+  padding: 20px;
+  text-align: center;
+  height: 700px;
+  h1 {
+    color: @ltxt;
+  }
+  p {
+    color: @lime;
+  }
+}
+
+.fb-form {
+  margin: 20px 0;
+  display: grid;
+  text-align: center;
+  width: 100%;
+  height: 300px;
+  grid-template-areas: "name     text"
+                       "email    text"
+                       "select   text"
+                       "submit submit";
+  grid-template-columns: 40% 1fr;
+  grid-template-rows: 70px 70px 70px;
+  background-color: @tgrey;
+  border-radius: 10px;
+  padding: 8px;
+  max-width: 1000px;
+
+  input, textarea {
+    border-color: @dgrey;
+    border-radius: 5px;
+    color: @ltxt;
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+    background-color: @tgrey;
+    box-sizing: border-box;
+  }
+  input:focus , textarea:focus {
+      box-sizing: border-box;
+      outline: none;
+      border: 2px @lime solid;
+  }
+  input::placeholder, textarea::placeholder {
+    color: @lime;
+  }
+}
+
+.name {
+  grid-area: name;
+}
+
+.email {
+  grid-area: email;
+}
+.country {
+  grid-area: select;
+}
+.text {
+  grid-area: text;
+}
+
+
+.name, .email, .country, .text, .submit {
+
+  box-sizing: border-box;
+  border: 1px @dgrey solid;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+.submit {
+  cursor: pointer;
+  grid-area: submit;
+  background-color: @lime;
+  border: 2px @lime solid;
+  color: @dtxt;
+  transition: 0.2s;
+}
+.submit:focus {
+  outline: none;
+}
+.submit:hover {
+  background-color: @limetr;
+  color: @dtxt;
+  transition: 0.2s;
+}

@@ -107,8 +107,26 @@
 
 <!-- content-block4 ----------------------------------------------------------->
 <div class="content-block4">
+  <h1>Feedback</h1>
+  <p>We'll be glad to know your opinion.. or not :(</p>
   <div class="fb-form">
 
+        <p class="name">
+            <input name="name" type="text" placeholder="Name" id="name" />
+        </p>
+        <p class="email">
+            <input name="email" type="text" id="email" placeholder="Email" />
+        </p>
+        <p class="country">
+            <input name="country" type="text" id="country" placeholder="Country" />
+        </p>
+
+
+      <p class="text">
+          <textarea name="text" class="validate[required,length[6,300]] feedback-input" id="comment" placeholder="Your feedback goes here.."></textarea>
+      </p>
+
+    <button class="submit"> SUBMIT </button>
   </div>
 </div>
 

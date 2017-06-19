@@ -76,7 +76,7 @@ $(document).ready(function(){
      timer = window.setInterval(slider, 5000);
    });
 
-   // navbar shrink
+// navbar shrink
 
    $(window).scroll(function() {
       if ($(document).scrollTop() > 150) {
@@ -88,7 +88,7 @@ $(document).ready(function(){
       }
     });
 
-    // parallax
+// parallax
 
     $(document).ready(function(){
           $('body').mousemove(function(e){

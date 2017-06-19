@@ -488,7 +488,7 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: linear-gradient(to bottom right, @lgrey, @lime);
+  background: linear-gradient(to bottom, @lgrey, @lime);
   padding: 20px;
   text-align: center;
   height: 700px;
@@ -496,6 +496,7 @@ h1 {
     color: @ltxt;
   }
   p {
+
     color: @lime;
   }
 }
@@ -575,4 +576,25 @@ h1 {
   background-color: @limetr;
   color: @dtxt;
   transition: 0.2s;
+}
+
+.contacts {
+  top: 600px;
+  margin: 20px 0;
+  list-style: none;
+  a {
+    text-decoration: none;
+    color: @dtxt;
+  }
+  a:hover {
+    color: @ltxt;
+  }
+  li {
+    color: @lgrey;
+  }
+}
+
+#contacts {
+  margin-top: 50px;
+  color: @dtxt;
 }

@@ -397,7 +397,82 @@ h1 {
 
 
 .content-block3 {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 100%;
-  height: 800px;
+  height: auto;
+  text-align: center;
   background-color: @lgray;
+  background: url('../img/shards.jpg');
+  background-size: 80%;
+
+  h1 {
+    margin-top: 20px;
+    color: @ltxt;
+  }
+  p {
+    max-width: 900px;
+    color: @lime;
+    margin-bottom: 10px;
+  }
 }
+
+
+
+.srvc-container {
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+
+}
+.aligner {
+  cursor: pointer;
+  display: inline-table;
+  text-align: center;
+  width: 230px;
+  margin: 10px;
+  border-radius: 10px;
+  padding: 10px;
+  transition: 0.2s;
+}
+
+.aligner:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+  transform: scale(1.1);
+  transition: 0.2s;
+}
+
+.srvc {
+  margin: 10px;
+  position: relative;
+  text-align: center;
+  color: @ltxt;
+  p {
+      margin: 10px 0;
+  }
+  h2 {
+      margin: 5px 0;
+  }
+}
+
+
+
+.s-icon {
+  display: inline-block;
+  margin: 15px;
+  height: 60px;
+  width: 60px;
+}
+
+#bgicon {
+  display: inline-block;
+  justify-content: center;
+  height: 90px;
+  width: 90px;
+  border-radius: 50%;
+  background-color: @lime;
+}
+
+//---------------------------------- content-block4 ---------------------------------------------

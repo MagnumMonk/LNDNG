@@ -87,3 +87,13 @@ $(document).ready(function(){
         $('.navtxt').removeClass('navtxth');
       }
     });
+
+    // parallax
+
+    $(document).ready(function(){
+          $('body').mousemove(function(e){
+            var x = -(e.pageX + this.offsetLeft) / 30;
+            var y = -(e.pageY + this.offsetTop) / 30;
+            $('.content-block3').css('background-position', x + 'px ' + y + 'px' );
+          });
+      });

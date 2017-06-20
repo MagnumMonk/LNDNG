@@ -107,33 +107,33 @@ $('#feedback, #mfeedback').click(function(){
   $('html, body').animate({
     scrollTop: $('.content-block4').offset().top},'slow'
   );
-  $('.mob-navb').slideToggle(100);
+  $('.mob-navb').hide();
 });
 
 $('#contact, #mcontact').click(function(){
   $('html, body').animate({
     scrollTop: $('#contacts').offset().top},'slow'
   );
-  $('.mob-navb').slideToggle(100);
+  $('.mob-navb').hide();
 });
 
 $('#service, #mservice').click(function(){
   $('html, body').animate({
     scrollTop: $('.content-block3').offset().top},'slow'
   );
-  $('.mob-navb').slideToggle(100);
+  $('.mob-navb').hide();
 });
 
 $('#products, #mproducts').click(function(){
   $('html, body').animate({
     scrollTop: $('.content-block2').offset().top - 50},'slow'
   );
-  $('.mob-navb').slideToggle(100);
+  $('.mob-navb').hide();
 });
 
 $('#home, #mhome').click(function(){
   $('html, body').animate({ scrollTop: 0 },'slow');
-  $('.mob-navb').slideToggle(100);
+  $('.mob-navb').hide();
 });
 
 //navbar

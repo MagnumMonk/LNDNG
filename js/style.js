@@ -97,6 +97,3 @@ $(document).ready(function(){
             $('.content-block3').css('background-position', x + 'px ' + y + 'px' );
           });
       });
-
-    var height = $(window).height();
-    var blockHeight = $('.slide-container');

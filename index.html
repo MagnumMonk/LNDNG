@@ -25,22 +25,22 @@
       <span class="logo2">Loggo</span>
     </div>
     <ul class="nvg-list">
-      <li class ="list" id="home"><a class='navtxt' href="">Home</a></li>
-      <li class ="list" id="products"><a class='navtxt' href="">Products</a></li>
-      <li class ="list" id="service"><a class='navtxt' href="">Service</a></li>
-      <li class ="list" id="feedback"><a class='navtxt' href="">Feedback</a></li>
-      <li class ="list" id ="textn"><a class='navtxt' href="">textn</a></li>
-      <li class ="list" id="contact"><a class='navtxt' href="">Contacts</a></li>
+      <li class ="list" id="home"><a class='navtxt'>Home</a></li>
+      <li class ="list" id="products"><a class='navtxt'>Products</a></li>
+      <li class ="list" id="service"><a class='navtxt'>Service</a></li>
+      <li class ="list" id="feedback"><a class='navtxt'>Feedback</a></li>
+      <li class ="list" id ="textn"><a class='navtxt'>textn</a></li>
+      <li class ="list" id="contact"><a class='navtxt'>Contacts</a></li>
     </ul>
     <span class="navicon"><a onclick="navFunction()">&#9776;</a></span>
   </div>
   <div class="mob-navb">
-    <li  id="mhome"><a class='navtxt' href="">Home</a></li>
-    <li  id="mproducts"><a class='navtxt' href="">Products</a></li>
-    <li  id="mservice"><a class='navtxt' href="">Service</a></li>
-    <li  id="mfeedback"><a class='navtxt' href="">Feedback</a></li>
-    <li  id ="mtextn"><a class='navtxt' href="">textn</a></li>
-    <li  id="mcontact"><a class='navtxt' href="">Contacts</a></li>
+    <li  id="mhome"><a class='navtxt'>Home</a></li>
+    <li  id="mproducts"><a class='navtxt'>Products</a></li>
+    <li  id="mservice"><a class='navtxt'>Service</a></li>
+    <li  id="mfeedback"><a class='navtxt'>Feedback</a></li>
+    <li  id ="mtextn"><a class='navtxt'>textn</a></li>
+    <li  id="mcontact"><a class='navtxt'>Contacts</a></li>
   </div>
 
 <!-- content-block1 -->
@@ -85,7 +85,7 @@
       <div class="card" ng-repeat="product in products" ng-style="{'background-image':'url({{product.icon}})'}">
           <div class="cover">
               <h2 class="p-name">{{product.name}}</h2>
-              <a class="price" href="">
+              <a class="price">
                 <p>{{product.price | currency}}</p>
                 <p class='hid'>BUY</p>
               </a>
@@ -100,7 +100,7 @@
   <h1>Services</h1>
   <p>Sonet sententiae efficiendi ex sea, prompta partiendo sea id, sea cu volutpat postulant. Nam electram vituperata eu. Tale temporibus cu duo, qui facilisi cotidieque id, eu amet wisi eum. Ius virtute electram disputationi ad, simul iriure omnesque no has.</p>
   <div class="srvc-container">
-    <div class='aligner' ng-repeat="service in services">
+    <div class='aligner slideanim' ng-repeat="service in services">
     <div class="srvc">
       <div id='bgicon'>
         <img src="{{service.icon}}" class="s-icon" alt="service icon"/>
@@ -116,7 +116,7 @@
 <div class="content-block4">
   <h1>Contact us</h1>
   <p>We'll be glad to know your opinion.. or not :(</p>
-  <div class="fb-form">
+  <div class="fb-form slideanim">
 
         <p class="name">
             <input name="name" type="text" placeholder="Name" id="name" />
@@ -137,11 +137,11 @@
   </div>
   <p id="contacts">You can also contact us directly with the way you prefer most</p>
   <ul class="contacts">
-    <li>tel:<a href=""> 8-800-800-80-80</a></li>
-    <li>tel2:<a href=""> 8-800-800-89-89</a></li>
-    <li>email:<a href=""> company@gmail.com</a></li>
-    <li>facebook:<a href=""> www.facebook.com</a></li>
-    <li>twitter:<a href=""> www.twitter.com</a></li>
+    <li>tel:<a> 8-800-800-80-80</a></li>
+    <li>tel2:<a> 8-800-800-89-89</a></li>
+    <li>email:<a> company@gmail.com</a></li>
+    <li>facebook:<a> www.facebook.com</a></li>
+    <li>twitter:<a> www.twitter.com</a></li>
   </ul>
 </div>
 

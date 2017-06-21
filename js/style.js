@@ -93,13 +93,13 @@ $(document).ready(function(){
 
 // parallax
 
-    $(document).ready(function(){
+  /*  $(document).ready(function(){
           $('body').mousemove(function(e){
             var x = -(e.pageX + this.offsetLeft) / 30;
             var y = -(e.pageY + this.offsetTop) / 30;
             $('.content-block3').css('background-position', x + 'px ' + y + 'px' );
           });
-      });
+      }); */
 
 // scrolling rollin rollin
 
@@ -152,3 +152,22 @@ $(document).ready(function() {
     checkWidth();
     $(window).resize(checkWidth);
   });
+
+  $(window).scroll(function() {
+  $(".slideanim").each(function(){
+    var pos = $(this).offset().top;
+
+    var winBottom = $(window).scrollTop() + $(window).height();
+    if (pos < winBottom) {
+      $(this).addClass("slide");
+    }
+  });
+});
+
+$(document).ready(function(){
+  $(window).scroll(function(){
+    var Y = -$(window).scrollTop() / 5;
+    var coord = 'center ' + Y + 'px';
+    $('.content-block3').css({ backgroundPosition: coord });
+  });
+});
